@@ -1,7 +1,8 @@
 package com.learning.kservice.models
 
 import java.time.LocalDateTime
-import javax.persistence.*
+import javax.persistence.Entity
+import javax.persistence.Id
 
 @Entity
 data class User(
