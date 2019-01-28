@@ -13,7 +13,7 @@ class ScoreController {
     lateinit var scoreCardService: ScoreCardService
 
     @GetMapping("/")
-    fun findAllByDesc() = scoreCardService.leaders()
+    fun findTop3() = scoreCardService.leaders()
 
     @PostMapping("/")
     fun addScore(@RequestParam("score") score: Int, @RequestParam("userId") userId: String) =
