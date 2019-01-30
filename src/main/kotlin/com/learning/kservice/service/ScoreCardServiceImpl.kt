@@ -5,11 +5,10 @@ import com.learning.kservice.datarepo.UserRepository
 import com.learning.kservice.models.Score
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import javax.transaction.Transactional
 
 @Service("scoreCardService")
-@Transactional
 class ScoreCardServiceImpl : ScoreCardService {
+
     @Autowired
     lateinit var scoreRepository: ScoreRepository
 
