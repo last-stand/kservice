@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("/api/leaders")
 class ScoreController {
+
     @Autowired
     lateinit var scoreCardService: ScoreCardService
 
